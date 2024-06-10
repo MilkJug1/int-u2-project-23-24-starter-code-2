@@ -4,10 +4,13 @@
 /*NOTE: Animations for the main info, slide in, image is top down, and the title slides from in from the right */
 h1 {
     text-align:center;
+    background-color: MediumOrchid;
 }
 
 body {
-        background-color:#663399;
+        background-image: linear-gradient(to bottom left, #ee82ee, BlueViolet);
+        /* background-color: linear-gradient(MediumOrchid, DarkOrchid); */
+        /* background-color:#EE82ee; */
         /* 7b68ee*/
         color: #FFF0F5;
 }
@@ -15,14 +18,17 @@ body {
 /* The code below centers all images on the page and gives them a width of 400px. */
 .image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:300px;
+      margin-left: auto;
+      margin-right: auto;
+      width:300px;
+    /* animation-duration: 3s; */
+    /* animation-name: slidein; */
 }
 
 .comic {
     display: block;
     margin-left: auto;
+    width: 500px;
     margin-right: auto;
 }
 
@@ -30,10 +36,24 @@ body {
 h2 {
     text-align:center;
     justify-content: center;
+    animation-name: topdown;
+    animation-duration: 4s; 
+    animation-direction: alternate;
+
+}
+
+p {
+    background: linear-gradient(-20deg, AquaMarine, FloralWhite);
+    font-weight: 600;
+    font-size: larger;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 a {
     color: #00FFFF;
+    animation: 3s 1 alternate slidein
 }
 
 /* The code below aligns all the sections horizontally on the bottom. */
@@ -48,6 +68,33 @@ a {
 
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
-    border: 5px #7B68EE solid;
+    border: 2mm ridge #ff00ff;
     margin:5px;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-direction: alternate;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes topdown {
+    from {
+        margin-top: 100%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%
+    }
 }
