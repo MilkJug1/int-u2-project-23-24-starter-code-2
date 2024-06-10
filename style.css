@@ -1,20 +1,39 @@
 /* The code below centers the text of all h1's on the page. */
+/* TODO: ADD ANIMATIONS*/
+
+/*NOTE: Animations for the main info, slide in, image is top down, and the title slides from in from the right */
 h1 {
     text-align:center;
 }
 
+body {
+        background-color:#663399;
+        /* 7b68ee*/
+        color: #FFF0F5;
+}
+
 /* The code below centers all images on the page and gives them a width of 400px. */
-img {
+.image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:400px;
+  width:300px;
+}
+
+.comic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* The code below centers the text of all h2's on the page. */
 h2 {
     text-align:center;
     justify-content: center;
+}
+
+a {
+    color: #00FFFF;
 }
 
 /* The code below aligns all the sections horizontally on the bottom. */
@@ -29,6 +48,6 @@ h2 {
 
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
-    border: 5px black solid;
+    border: 5px #7B68EE solid;
     margin:5px;
 }
