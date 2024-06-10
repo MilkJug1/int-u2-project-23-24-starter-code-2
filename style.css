@@ -7,7 +7,8 @@ h1 {
 }
 
 body {
-        background-color:#663399;
+        background-image: linear-gradient(to bottom left, #FFB6C1, BlueViolet); /* TODO: MAKE COLOR NOT SO LIGHT, A bit blinding*/ 
+        /* background-color:#663399; */
         /* 7b68ee*/
         color: #FFF0F5;
 }
@@ -20,6 +21,11 @@ body {
   width:300px;
 }
 
+p {
+    /*TODO: Add text gradient(optional)*/
+        color: #FFF0F5;
+}
+
 .comic {
     display: block;
     margin-left: auto;
@@ -28,7 +34,8 @@ body {
 
 /* The code below centers the text of all h2's on the page. */
 h2 {
-    text-align:center;
+    border: 4mm ridge #e0b3ff;
+    text-align: center;
     justify-content: center;
 }
 
@@ -48,6 +55,10 @@ a {
 
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
-    border: 5px #7B68EE solid;
+    border: 5px #e6b3cb solid;
     margin:5px;
+}
+
+#section1 {
+    /* NOTE: USE THIS FOR ANIMATING*/
 }
