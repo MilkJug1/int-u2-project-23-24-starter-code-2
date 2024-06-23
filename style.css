@@ -45,7 +45,7 @@ h2 {
 p {
     background: linear-gradient(-20deg, AquaMarine, FloralWhite);
     font-weight: 600;
-    font-size: larger;
+    font-size: 18px;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
